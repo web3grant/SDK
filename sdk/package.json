@@ -1,0 +1,45 @@
+{
+  "name": "coffeesdk",
+  "version": "1.0.0",
+  "description": "SDK for interacting with Coffee smart contracts on BASE",
+ "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["blockchain", "ethereum", "base", "smart-contracts", "sdk"],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^5.0.2",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^22.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/coffeesdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/coffeesdk/issues"
+  },
+  "homepage": "https://github.com/yourusername/coffeesdk#readme"
+}
